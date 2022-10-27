@@ -27,6 +27,11 @@ p{
     text-align: center;
     font-size: 18px;
 }
+
+.card-section{
+    margin: 4rem 0;
+}
+
 /* utilities */
 
 .container{
@@ -34,8 +39,39 @@ p{
     margin: 0 auto;
 }
 
-.clearfix{
+.clearfix::after{
     content: '';
     clear: both;
     display: table;
+}
+
+/* cards */
+
+.card{
+    float: left;
+    background-color: rgb(37, 38, 42);
+    width: calc(100% / 3);
+}
+
+.card img{
+    height: 100px;
+    float: left;
+}
+
+.text{
+    margin: 1rem 0;
+}
+
+.text *{
+    margin: 1rem;
+    line-height: 1.5rem;
+}
+
+h3{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(62, 168, 255);
 }
